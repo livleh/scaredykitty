@@ -10,7 +10,6 @@ Node `>=18.x` required.
 npm install
 npm run build
 ```
-
 ## How to host on Github Pages
 
 1. Fork this repo!
