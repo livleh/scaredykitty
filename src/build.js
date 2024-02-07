@@ -22,8 +22,14 @@ const CONTENT_TYPES = [
   'application/rss+xml',
   'application/xml',
   'application/octet-stream',
-  'text/xml'
+  'text/xml',
+  'application/x-rss+xml', // Additional possible content-type
+  'application/force-download' // Another possible content-type
 ];
+
+function isRSSExtension(url) {
+  return ['.rss', '.xml', '.rdf'].some(ext => url.endsWith(ext));
+}
 
 const config = readCfg('./src/config.json');
 const feeds = USE_CACHE ? {} : readCfg('./src/feeds.json');
@@ -64,7 +70,7 @@ async function build({ config, feeds, cache, writeCache = false }) {
         // e.g., `application/xml; charset=utf-8` -> `application/xml`
         const contentType = response.headers.get('content-type').split(';')[0];
 
-        if (!CONTENT_TYPES.includes(contentType))
+        if (!CONTENT_TYPES.includes(contentType) && !isRSSExtension(url))
           throw Error(`Feed at ${url} has invalid content-type.`)
 
         const body = await response.text();
@@ -78,6 +84,7 @@ async function build({ config, feeds, cache, writeCache = false }) {
 
         contents.feed = url;
         contents.title = contents.title || contents.link;
+        
         groupContents[groupName].push(contents);
 
         // item sort & normalization

@@ -1,16 +1,146 @@
 {
-  "feeds": [
-    "https://hnrss.org/frontpage?points=10&comments=5&count=35"
+  "🏠": [
+    "https://www.srf.ch/news/bnf/rss/1890",
+    "https://rss.metafilter.com/metafilter.rss",
+    "https://rss.metafilter.com/ask.rss"
   ],
-  "blogs": [
-    "https://xeiaso.net/blog.rss",
-    "https://drewdevault.com/blog/index.xml",
-    "https://danluu.com/atom.xml",
-    "https://kevinfiol.com/atom.xml",
-    "https://terrysfreegameoftheweek.com/feed/",
-    "https://fasterthanli.me/index.xml"
+  "▶️": [
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCB_WkcAGmlt5lOW1uHCvemQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCRRr_xrOm66qaigIbwFLvbQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC7vVhkEfw4nOGp8TyDk7RcQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC4QZ_LsYcvcq7qOsOhpAX4A",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC0intLFzLaudFG-xAvUEO-A",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCcvfHa-GHSOHFAjU0-Ie57A",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCHnyfMqiRRG1u-2MsSQLbXA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCtZO3K2p8mqFwiKWb9k7fXA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCNhX3WQEkraW3VHPyup8jkQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCyqHPsR1eKEPSunlp6E-LSQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCgNg3vwj3xt7QOrcIDaHdFg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC3U5HoHRrkWNSTnaaXMYrNA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCobNHsxWdWDFCuPqHoBmyUw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCNXvxXpDJXp-mZu3pFMzYHQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCcaTUtGzOiS4cqrgtcsHYWg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCBa659QWEk1AI4Tg--mrJ2A",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC6nSFpj9HTCZ5t-N3Rm3-HA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC2C_jShtL725hvbm1arSV9w",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC1_uAIS3r8Vu6JjXWvastJg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCKzJFdi57J53Vr_BkTfN3uQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCfMJ2MchTSW2kWaT0kK94Yw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCfR9TgEotsz7Uj7QQJ67w8A",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCyHDQ5C6z1NDmJ4g6SerW8g",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCtHaxi4GTYDpJgMSGy7AeSw"
   ],
-  "reddit": [
-    "https://www.reddit.com/r/Games.rss"
+  "🎓": [
+    "https://ethz.ch/en/news-und-veranstaltungen/eth-news/news/_jcr_content.feed",
+    "https://api.quantamagazine.org/feed/",
+    "https://kill-the-newsletter.com/feeds/7ietn0cndxnqxods.xml"
+  ],
+  "🎞": [
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCFJxE0l3cVYU4kHzi4qVEkw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCWyRlMktpKbfefqBQk8U6Nw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCbuf70y__Wh3MRxZcbj778Q",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCuB3qjWes1E8t4yUmbP360Q",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UChhyfYkhuVrzmvDr-WqpDSw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCzuvcjgZyyMaO6gwidRT8GA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC9WShNx2HsXRGjj9F593HzA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCN3FtxTrTFLni3wjRubbN4Q",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCG1h-Wqjtwz7uUANw6gazRw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCEbsqdNIeaYz5WZmKH0cXbA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCY6DpwQetygtye7GM1zVHmw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCoOss5XiPpnLHGmLrBvNkJg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCpmvp5czsIrQHsbqya4-6Jw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCepkun0sH16b-mqxBN22ogA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCTb5oiMqBYdbpVT5QiX0Deg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCVbWFrI5NrLCWIjjW5cbzMg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCash6vxr1eNi5r_JsihPD_g",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCCkLTaPLElW6ps3sfx8TUNA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCVHxJghKAB_kA_5LMM8MD3w",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCJmlCcnfMlyPA2oSbb072QA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCL3Qpe6vbDN9czUaeRdQtGQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCZ_ckIrAKe6H-DMR0yqzbWA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCqNpjt_UcMPgm_9gphZgHYA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC0bC_i4bzdIlq16iqnY0igw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCHdojZtRVlsx_aQFa12ZRpA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCRzzTt_HTBV_MSLZP1Re7Tw"
+
+  ],
+  "🏳️‍⚧️": [
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCNRNF27Q3clFZ3XAPu9DkUg",
+    "https://nitter.cz/Potatopolitics/rss",
+    "https://nitter.cz/josierosec/rss",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCC_S5oOAJp0iaF4fDT3QS0g",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCxFWzKZa74SyAqpJyVlG5Ew",
+    "https://www.tgns.ch/de/feed/",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UChBcQ24GbjS5xCXm3K4e8-A",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC1qvBHaEuUoPnhU6N68OcDA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC8QNOIOoi63U0arTgU47vEQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCHu6yK2Ht1J7lfvYBXv0OsQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCmAjdwkUVd5tcSRAhwV5gnQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCsa8g1rw3tcCSoo_Xikg1tg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCltHZgiwrtQMcyqBHpJnE8Q",
+    "https://maia.crimew.gay/feed.xml",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC_OttpBEWWzSUlZbk5qmhSA",
+    "https://kill-the-newsletter.com/feeds/9dlca2i0xnm3znpv.xml",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCDGCJI51l0iAV6qqCr-8DtQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCVmJZtz_lnraUf6aTa3Pj2A",
+    "https://www.reddit.com/r/egg_irl/search.rss?q=author%3ABrooke-Valley&restrict_sr=on&include_over_18=on&sort=new&t=all",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCQp6TcpGks9Hhi-DlyCOqCg",
+    "https://moderntranshormones.com/feed",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC0AYalVhD42f9S3DrqZlUUw",
+    "https://transfemscience.org/feed.xml",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCsO6K04mAlTs04KmSvhY06A",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCNvsIonJdJ5E4EXMa65VYpA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC2PA-AKmVpU6NKCGtZq_rKQ"
+  ],
+  "👨‍💻": [
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCUmLRMERmJrmUtgnbFfknAg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCfeMEuhdUtxtaUMNSvxq_Xg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCO8DQrSp5yEP937qNqTooOw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCzSc8bhRKEKe7xEGp-5LWAg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC9z7EZAbkphEMg0SP7rw44A",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCTjPBE9BNsmv44wgxWEy2zw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCV0qA-eDDICsRR9rPcnG7tw"
+  ],
+  "👩‍💻": [
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCxX9wt5FWQUAAz4UrysqK9A",
+    "https://fosstodon.org/@kate.rss",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC4-5v-f-xKnbi1yaAuRSi_w",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCobqgqE4i5Kf7wrxRxhToQA",
+    "https://kill-the-newsletter.com/feeds/maf3ks5bm4twjn53.xml",
+    "https://nitter.cz/FreyaHolmer/rss",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCmtyQOKKmrMVaKuRXz02jbQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC7M-Wz4zK8oikt6ATcoTwBA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCK8XIGR5kRidIw2fWqwyHRA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCd0dc7kQA1FUpJ76o1EjLqQ",
+    "https://lilianweng.github.io/index.xml"
+  ],
+  "📖": [
+    "http://feeds.feedburner.com/NewsNovo-monde"
+  ],
+  "📺": [
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCW5OrUZ4SeUYkUg1XqcjFYA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCJjSDX-jUChzOEyok9XYRJQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCn_hpOysFGIz3S7RLErWO3w",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCNIuvl7V8zACPpTmmNIqP2A",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCfa7jJFYnn3P5LdJXsFkrjw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCr3cBLTYmIK9kY0F_OdFWFQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCvK4bOhULCpmLabd2pDMtnA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCByBOwwOU5tKddYpsrHiUUw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UClOeGHFiUlegRJFGhkMxoHg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCh7Fh7cDnaMXALyileCNgOg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCn_qGYCSN87VusPJRxyrMSw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCHC4G4X-OR5WkY-IquRGa3Q",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCndi9zHvIDYa1Tp6vXJqHxA"
+  ],
+  "🧘‍♀️": [
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UClHVl2N3jPEbkNJVx-ItQIQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC0r7eZxpliMa-o9ybys0_9g",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCxoaO7nLSSUjtVFm_tA4EEQ",
+    "http://feeds.feedburner.com/zenhabits",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCK1PMPW8ORraJ5bjsfqAfOA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC-ZQaezPlUTe94-7buWtIfA"
   ]
 }

@@ -4,108 +4,207 @@ const forEach = (arr, fn) => {
   return str;
 };
 
-const article = (item) => `
-  <article class="item">
-    <header class="item__header">
-      <a href="${item.link}" target='_blank' rel='noopener norefferer nofollow'>
-        ${item.title}
-      </a>
-    </header>
 
-    <small>
-      ${item.feedUrl ? `<span class="item__feed-url monospace">${item.feedUrl}</span>` : ''}
-      <ul class="article-links">
-        <li class="monospace">${item.timestamp || ''}</li>
-        ${item.comments ? `
-          <li><a href="${item.comments}" target='_blank' rel='noopener norefferer nofollow'>comments</a></li>
-        ` : ''
-        }
-        <li><a href="https://txtify.it/${item.link}" target='_blank' rel='noopener norefferer nofollow'>txtify</a></li>
-        <li><a href="https://archive.md/${item.link}" target='_blank' rel='noopener norefferer nofollow'>archive.md</a></li>
-      </ul>
-    </small>
-  </article>
-`;
 
-export const template = ({ allItems, groups, errors, now }) => (`
+function formatDateDifference(pastDate, currentDate) {
+
+
+  let difference = currentDate - pastDate; // difference in milliseconds
+
+  if (difference >= oneYear) {
+      return Math.floor(difference / oneYear) + 'Y';
+  } else if (difference >= oneMonth) {
+      return Math.floor(difference / oneMonth) + 'M';
+  } else if (difference >= oneDay) {
+      return Math.floor(difference / oneDay) + 'd';
+  } else if (difference >= oneHour) {
+      return Math.floor(difference / oneHour) + 'h';
+  } else {
+      return Math.floor(difference / oneMinute) + 'm';
+  }
+}
+
+
+export function template ({ allItems, groups, errors, now }) {
+  const nowmil = Date.now();
+  const oneMinute = 60 * 1000;         // milliseconds in one minute
+  const oneHour = oneMinute * 60;      // milliseconds in one hour
+  const oneDay = oneHour * 24;         // milliseconds in one day
+  const oneMonth = oneDay * 30;        // rough estimate - milliseconds in one "month" (30 days)
+  const oneYear = oneDay * 365;        // rough estimate - milliseconds in one year (365 days)
+  return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>🦉 reader</title>
+  <title>ScaredyKitten</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inria+Sans">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="app">
-    <input type="checkbox" class="menu-btn" id="menu-btn" />
-    <label class="menu-label" for="menu-btn"></label>
+  <div id="rss">
+    <div>
+      <article>
+        <section>
+        ${/*section for each group*/forEach(groups, ([groupName, feeds]) => `
+          <div class="follows" id="${groupName}">
+            <div class="tags">
+              <ul style="margin-left:0px">
+                ${groups.map((group) => {
 
-    <div class="sidebar">
-      <header>
-        <h1 class="inline" style="user-select: none;">🦉</h1>
-        <ul class="group-selector">
-          <li><a href="#all-articles">all articles</a></li>
-          ${forEach(groups, group => `
-            <li><a href="#${group[0]}">${group[0]}</a></li>
-          `)}
-        </ul>
-      </header>
+                  let difference = nowmil - (new Date (group[1][0].items[0].isoDate)).getTime(); // difference in milliseconds
 
-      <footer>
-        ${errors.length > 0 ? `
-          <h2>Errors</h2>
-          <p>There were errors trying to parse these feeds:</p>
-          <ul>
-          ${forEach(errors, error => `
-            <li>${error}</li>
-          `)}
-          </ul>
-        ` : ''
-        }
+                  let dateclass = "";
 
-        <p>
-          Last updated ${now}. Powered by <a href="https://github.com/kevinfiol/rss-reader">Bubo Reader</a>, a project by <a href="https://george.mand.is">George Mandis</a> and <a href="https://kevinfiol.com">Kevin Fiol</a>.
-        </p>
-      </footer>
-    </div>
+                  if (difference >= oneMonth) {
+                      dateclass = "age-m";
+                  } else if (difference >= oneDay) {
+                      dateclass = "age-d";
+                  } else {
+                      dateclass = "age-h";
+                  }
 
-    <main>
-      <section id="all-articles">
-        <h2>all articles</h2>
-        ${forEach(allItems, item => article(item))}
-      </section>
 
-      ${forEach(groups, ([groupName, feeds]) => `
-        <section id="${groupName}">
-          <h2>${groupName}</h2>
+                  return ` 
+                <li class="${dateclass}"><a ${group[0] === groupName ? "class='active'" : ''} href="#${group[0]}">${group[0]}</a></li>
+              `}).join('')}
+              </ul>
+            </div>
 
-          ${forEach(feeds, feed => `
-            <details>
-              <summary>
-                <span class="feed-title">${feed.title}</span> 
-                <span class="feed-url">
-                  <small>
-                    (${feed.feed})
-                  </small>
-                </span>
-                <div class="feed-timestamp">
-                  <small>Latest: ${feed.items[0] && feed.items[0].timestamp || ''}</small>
-                </div>
-              </summary>
-              ${forEach(feed.items, item => article(item))}
-            </details>
+
+            
+              <ol>
+              ${/*feeds that can be enlarged*/feeds.map((feed) => {
+                let difference = nowmil - (new Date (feed.items[0].isoDate)).getTime(); // difference in milliseconds
+
+                let datestring = "";
+                let dateclass = "";
+
+                if (difference >= oneYear) {
+                    datestring = Math.floor(difference / oneYear) + 'Y';
+                    dateclass = "age-m";
+                } else if (difference >= oneMonth) {
+                    datestring = Math.floor(difference / oneMonth) + 'M';
+                    dateclass = "age-m";
+                } else if (difference >= oneDay) {
+                    datestring = Math.floor(difference / oneDay) + 'd';
+                    dateclass = "age-d";
+                } else if (difference >= oneHour) {
+                    datestring = Math.floor(difference / oneHour) + 'h';
+                    dateclass = "age-h";
+                } else {
+                    datestring = Math.floor(difference / oneMinute) + 'm';
+                    dateclass = "age-h";
+                }
+
+
+
+
+                return `
+              <li class="${dateclass}">
+                  <h3>
+                      <a href="${feed.link}"> <img class="favicon" src=${"https://"+(new URL(feed.link).hostname)+"/favicon.ico"} width="20" height="20"></a>
+                      <a class="url" target="" href=${feed.link}>${feed.title}</a>
+                      <span class="latest">${datestring}</span>
+                  </h3>
+                  <div class="extra trunc">
+                      <div class="post">
+                          <ol class="title">
+                          ${feed.items.slice(0, 10).map(item => {
+                            let difference = nowmil - (new Date (item.isoDate)).getTime(); // difference in milliseconds
+
+                            let datestring = "";
+                            let dateclass = "";
+            
+                            if (difference >= oneYear) {
+                                datestring = Math.floor(difference / oneYear) + 'Y';
+                                dateclass = "age-m";
+                            } else if (difference >= oneMonth) {
+                                datestring = Math.floor(difference / oneMonth) + 'M';
+                                dateclass = "age-m";
+                            } else if (difference >= oneDay) {
+                                datestring = Math.floor(difference / oneDay) + 'd';
+                                dateclass = "age-d";
+                            } else if (difference >= oneHour) {
+                                datestring = Math.floor(difference / oneHour) + 'h';
+                                dateclass = "age-h";
+                            } else {
+                                datestring = Math.floor(difference / oneMinute) + 'm';
+                                dateclass = "age-h";
+                            }
+
+                            return `
+                              <li class="${dateclass}">
+                                  <a href="${item.link}">${item.title}</a>
+                                  <span class="ago">${datestring}</span>
+                              </li>
+                          `}).join('')}
+                          </ol>
+                          
+                          <a class="collapse" href=""><span class="enter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="3" x2="10" y2="9"></line><line x1="3" y1="13" x2="10" y2="7"></line></svg></span><span class="close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="0" y1="5" x2="6" y2="13"></line><line x1="10" y1="5" x2="4" y2="13"></line></svg></span></a>
+                      </div>
+
+                  </div>
+      
+              </li>
+              `}).join('')}
+
+
+              
+              
+            </ol>
+            
+
+
+                
+
+
+
+
+      
+
+
+            
+          </div>
           `)}
         </section>
-      `)}
-
-        <div class="default-text">
-          <p>🦉📚 welcome to bubo reader</p>
-          <p>select a feed group to get started</p>
-        </div>
-    </main>
+      </article>
+    </div>
   </div>
+  <script>
+
+  var elements = document.getElementsByClassName("collapse");
+
+  var toggleVisibility = function() {
+      event.preventDefault();
+      // Toggle the visibility of the 'enter' and 'close' spans within the clicked element
+      var enterSpan = this.querySelector('.enter');
+      var closeSpan = this.querySelector('.close');
+
+      if (enterSpan.style.display === 'none') {
+          enterSpan.style.display = 'inline';
+          closeSpan.style.display = 'none';
+      } else {
+          enterSpan.style.display = 'none';
+          closeSpan.style.display = 'inline';
+      }
+      var parentDiv = this.closest('.extra');
+      if (parentDiv) {
+          parentDiv.classList.toggle('trunc');
+      }
+  };
+
+  for (var i = 0; i < elements.length; i++) {
+      elements[i].addEventListener('click', toggleVisibility, false);
+  }
+
+
+  if (!window.location.hash) {
+    window.location.hash = '${groups[0][0]}';
+  }
+</script>
 </body>
 </html>
-`);
+`};
