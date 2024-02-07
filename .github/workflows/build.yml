@@ -25,6 +25,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           single-commit: true
-          git-config-email: <>
+          git-config-email: livleh@users.noreply.github.com
           branch: gh-pages
           folder: output
