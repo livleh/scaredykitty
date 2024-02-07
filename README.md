@@ -1,24 +1,6 @@
-# 🦉 Bubo Reader (Fork)
+# ScaredyKitten
 
-![screenshot](./demo.png)
-
-[Demo Site](https://kevinfiol.com/rss-reader/)
-
-This is a personal fork of the excellent [Bubo Reader](https://github.com/georgemandis/bubo-rss) by George Mandis. I've made several opinionated changes to the setup, including replacing dependencies with more compact alternatives. Please see below for deployment instructions.
-
-Original blogpost: [Introducing Bubo RSS: An Absurdly Minimalist RSS Feed Reader](https://george.mand.is/2019/11/introducing-bubo-rss-an-absurdly-minimalist-rss-feed-reader/)
-
-Blogpost about my fork: [A minimal RSS Feed Reader](https://kevinfiol.com/blog/a-minimal-rss-feed-reader/)
-
-Some changes I made:
-
-* Replace `nunjucks` with template strings (less dependencies for shorter build times)
-* Replace `node-fetch` with Node's native `fetch`
-* Many styling changes, including using the `:target` CSS selector to switch between groups (inspired by https://john-doe.neocities.org/)
-* The build script now sorts the feeds in each group by which one has the latest updates (this greatly improves the experience, imo)
-* An "All Articles" view
-* Privacy-redirect support via config file
-* Dark mode via `@media (prefers-color-scheme: dark)`
+This project is a fork from [rss-reader](https://github.com/kevinfiol/rss-reader). The design is heavily inspired by [fraidycat](https://fraidyc.at/).
 
 ## How to build
 
