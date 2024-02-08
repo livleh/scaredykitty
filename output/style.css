@@ -127,14 +127,17 @@ h3 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .follows h3 {
   font-size: 1.1rem;
-  margin: 8px 0px 4px;
+  margin: 8px 0px 0px;
   position: relative;
   z-index: 2;
   pointer-events: none;
+  padding: 0 0 2.5px;
 }
 
 .follows h3 a {
@@ -181,8 +184,8 @@ img {
   color: rgb(0, 0, 0);
   font-size: 0.9rem;
   cursor: default;
-  border-radius: 4px;
-  padding: 4px;
+  border-radius: 6px;
+  padding: 3.5px;
 }
 
 .follows li.age-d {
