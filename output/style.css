@@ -321,5 +321,11 @@ svg{
 .last_build {
   background-color: black !important;
   font-size: 1rem !important;
+}
+article a:visited {
+  color: rgb(170, 170, 170);
+}
 
+article a:hover {
+  color: rgb(238, 255, 51);
 }
