@@ -19,10 +19,16 @@ export function template ({ allItems, groups, errors, now }) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ScaredyKitten">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ScaredyKitten</title>
+  <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inria+Sans">
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -242,6 +248,15 @@ export function template ({ allItems, groups, errors, now }) {
   lastUpdatedElements.forEach(function(element) {
     element.textContent = "Updated " + datestring + " ago";
   });
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+            .then(function(registration) {
+                console.log('Service Worker registered with scope:', registration.scope);
+            }).catch(function(err) {
+                console.log('Service Worker registration failed:', err);
+            });
+  }
   
 
 </script>
