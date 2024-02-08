@@ -311,3 +311,8 @@ svg{
 .follows > ol > li {
   border-bottom: 1px dotted rgb(0, 85, 102);
 }
+
+.last_build {
+  background-color: black !important;
+  font-size: 1rem !important;
+}

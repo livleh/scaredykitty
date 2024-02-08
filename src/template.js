@@ -6,24 +6,6 @@ const forEach = (arr, fn) => {
 
 
 
-function formatDateDifference(pastDate, currentDate) {
-
-
-  let difference = currentDate - pastDate; // difference in milliseconds
-
-  if (difference >= oneYear) {
-      return Math.floor(difference / oneYear) + 'Y';
-  } else if (difference >= oneMonth) {
-      return Math.floor(difference / oneMonth) + 'M';
-  } else if (difference >= oneDay) {
-      return Math.floor(difference / oneDay) + 'd';
-  } else if (difference >= oneHour) {
-      return Math.floor(difference / oneHour) + 'h';
-  } else {
-      return Math.floor(difference / oneMinute) + 'm';
-  }
-}
-
 
 export function template ({ allItems, groups, errors, now }) {
   const nowmil = Date.now();
@@ -70,6 +52,7 @@ export function template ({ allItems, groups, errors, now }) {
                   return ` 
                 <li class="${dateclass}"><a ${group[0] === groupName ? "class='active'" : ''} href="#${group[0]}">${group[0]}</a></li>
               `}).join('')}
+              <li class="last_build">Updated </li>
               </ul>
             </div>
 
@@ -204,6 +187,62 @@ export function template ({ allItems, groups, errors, now }) {
   if (!window.location.hash) {
     window.location.hash = '${groups[0][0]}';
   }
+
+
+
+  let difference = Date.now() - ${nowmil};
+  let datestring = "";
+  let dateint = 0
+  if (difference >= ${oneYear}) {
+    dateint = Math.floor(difference / ${oneYear})
+    if (dateint > 1) {
+      datestring = dateint + ' years';
+    }
+    else {
+      datestring = dateint + ' year';
+    }
+  } else if (difference >= ${oneMonth}) {
+    dateint = Math.floor(difference / ${oneMonth})
+    if (dateint > 1) {
+      datestring = dateint + ' months';
+    }
+    else {
+      datestring = dateint + ' month';
+    }
+  } else if (difference >= ${oneDay}) {
+    dateint = Math.floor(difference / ${oneDay})
+    if (dateint > 1) {
+      datestring = dateint + ' days';
+    }
+    else {
+      datestring = dateint + ' day';
+    }
+  } else if (difference >= ${oneHour}) {
+    dateint = Math.floor(difference / ${oneHour})
+    if (dateint > 1) {
+      datestring = dateint + ' hours';
+    }
+    else {
+      datestring = dateint + ' hour';
+    }
+  } else {
+    dateint = Math.floor(difference / ${oneMinute})
+    if (dateint > 1) {
+      datestring = dateint + ' minutes';
+    }
+    else if (dateint < 1){
+      datestring = '< 1 minute';
+    }
+    else {
+      datestring = dateint + ' minute';
+    }
+  }
+  var lastUpdatedElements = document.querySelectorAll('.last_build');
+  lastUpdatedElements.forEach(function(element) {
+    element.textContent = "Updated " + datestring + " ago";
+  });
+  
+
 </script>
 </body>
 </html>
