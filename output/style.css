@@ -319,6 +319,7 @@ svg{
 
 .follows > ol > li {
   border-bottom: 1px dotted rgb(0, 85, 102);
+  margin-top: -7px;
 }
 
 .last_build {
