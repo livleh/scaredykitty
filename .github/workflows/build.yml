@@ -28,3 +28,4 @@ jobs:
           git-config-email: livleh@users.noreply.github.com
           branch: gh-pages
           folder: output
+          token: ${{ secrets.DEPLOY_TOKEN }}
