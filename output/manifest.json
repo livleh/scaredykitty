@@ -3,7 +3,7 @@
     "short_name": "ScaredyKitten",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#fff",
+    "background_color": "#000",
     "description": "A cool PWA!",
     "icons": [
       {
@@ -12,5 +12,5 @@
         "type": "image/png"
       }
     ],
-    "theme_color": "#fff"
+    "theme_color": "#000"
   }
