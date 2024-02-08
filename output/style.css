@@ -21,6 +21,12 @@ article{
   color: rgb(255,238,238);
   background-color: rgb(8,8,24);
 }
+@media screen and (max-width: 768px) {
+  article {
+    padding: 0px 0px 20px;
+  }
+}
+
 section{
   display: block;
 }
@@ -315,4 +321,5 @@ svg{
 .last_build {
   background-color: black !important;
   font-size: 1rem !important;
+
 }

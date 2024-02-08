@@ -31,11 +31,6 @@
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCyHDQ5C6z1NDmJ4g6SerW8g",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCtHaxi4GTYDpJgMSGy7AeSw"
   ],
-  "🎓": [
-    "https://ethz.ch/en/news-und-veranstaltungen/eth-news/news/_jcr_content.feed",
-    "https://api.quantamagazine.org/feed/",
-    "https://kill-the-newsletter.com/feeds/7ietn0cndxnqxods.xml"
-  ],
   "🎞": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCFJxE0l3cVYU4kHzi4qVEkw",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCWyRlMktpKbfefqBQk8U6Nw",
@@ -65,6 +60,21 @@
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCRzzTt_HTBV_MSLZP1Re7Tw"
 
   ],
+  "📺": [
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCW5OrUZ4SeUYkUg1XqcjFYA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCJjSDX-jUChzOEyok9XYRJQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCn_hpOysFGIz3S7RLErWO3w",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCNIuvl7V8zACPpTmmNIqP2A",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCfa7jJFYnn3P5LdJXsFkrjw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCr3cBLTYmIK9kY0F_OdFWFQ",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCvK4bOhULCpmLabd2pDMtnA",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCByBOwwOU5tKddYpsrHiUUw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UClOeGHFiUlegRJFGhkMxoHg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCh7Fh7cDnaMXALyileCNgOg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCn_qGYCSN87VusPJRxyrMSw",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCHC4G4X-OR5WkY-IquRGa3Q",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCndi9zHvIDYa1Tp6vXJqHxA"
+  ],
   "🏳️‍⚧️": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCNRNF27Q3clFZ3XAPu9DkUg",
     "https://nitter.cz/Potatopolitics/rss",
@@ -93,6 +103,11 @@
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCNvsIonJdJ5E4EXMa65VYpA",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UC2PA-AKmVpU6NKCGtZq_rKQ"
   ],
+  "🎓": [
+    "https://ethz.ch/en/news-und-veranstaltungen/eth-news/news/_jcr_content.feed",
+    "https://api.quantamagazine.org/feed/",
+    "https://kill-the-newsletter.com/feeds/7ietn0cndxnqxods.xml"
+  ],
   "👨‍💻": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCUmLRMERmJrmUtgnbFfknAg",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCfeMEuhdUtxtaUMNSvxq_Xg",
@@ -120,21 +135,7 @@
   "📖": [
     "http://feeds.feedburner.com/NewsNovo-monde"
   ],
-  "📺": [
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UCW5OrUZ4SeUYkUg1XqcjFYA",
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UCJjSDX-jUChzOEyok9XYRJQ",
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UCn_hpOysFGIz3S7RLErWO3w",
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UCNIuvl7V8zACPpTmmNIqP2A",
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UCfa7jJFYnn3P5LdJXsFkrjw",
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UCr3cBLTYmIK9kY0F_OdFWFQ",
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UCvK4bOhULCpmLabd2pDMtnA",
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UCByBOwwOU5tKddYpsrHiUUw",
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UClOeGHFiUlegRJFGhkMxoHg",
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UCh7Fh7cDnaMXALyileCNgOg",
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UCn_qGYCSN87VusPJRxyrMSw",
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UCHC4G4X-OR5WkY-IquRGa3Q",
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UCndi9zHvIDYa1Tp6vXJqHxA"
-  ],
+  
   "🧘‍♀️": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UClHVl2N3jPEbkNJVx-ItQIQ",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UC0r7eZxpliMa-o9ybys0_9g",
