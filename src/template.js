@@ -14,6 +14,7 @@ export function template ({ allItems, groups, errors, now }) {
   const oneDay = oneHour * 24;         // milliseconds in one day
   const oneMonth = oneDay * 30;        // rough estimate - milliseconds in one "month" (30 days)
   const oneYear = oneDay * 365;        // rough estimate - milliseconds in one year (365 days)
+
   return `
 <!DOCTYPE html>
 <html lang="en">
@@ -88,7 +89,7 @@ export function template ({ allItems, groups, errors, now }) {
                 return `
               <li class="${dateclass}">
                   <h3>
-                      <a href="${feed.link}"> <img class="favicon" src=${"https://"+(new URL(feed.link).hostname)+"/favicon.ico"} width="20" height="20"></a>
+                      <a href="${feed.link}"> <img class="favicon" src=${"https://"+(new URL(feed.link).hostname)+"/favicon.ico"} onerror="this.onerror=null; this.src='default-favicon.ico';" width="20" height="20"></a>
                       <a class="url" target="" href=${feed.link}>${feed.title}</a>
                       <span class="latest">${datestring}</span>
                   </h3>
