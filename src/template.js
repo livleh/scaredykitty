@@ -258,6 +258,11 @@ export function template ({ allItems, groups, errors, now }) {
             });
   }
   
+  document.addEventListener("visibilitychange", function() {
+    if ((document.visibilityState === 'visible')&&('ontouchstart' in document.documentElement)) {
+      window.location.reload(true);
+    }
+  }); 
 
 </script>
 </body>
