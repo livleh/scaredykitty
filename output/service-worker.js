@@ -3,8 +3,8 @@ self.addEventListener('install', function(e) {
       caches.open('your-cache-name').then(function(cache) {
         return cache.addAll([
           '/',
-          '/index.html',
           '/style.css',
+          '/manifest.json',
           // Add other resources that you want to cache
         ]);
       })

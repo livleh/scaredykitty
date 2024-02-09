@@ -85,7 +85,7 @@ export function template ({ allItems, groups, errors, now }) {
                     datestring = Math.floor(difference / oneHour) + 'h';
                     dateclass = "age-h";
                 } else {
-                    datestring = Math.floor(difference / oneMinute) + 'm';
+                    datestring = `<script>difference=Date.now()-${(new Date (feed.items[0].isoDate)).getTime()};if (difference >= ${oneHour}){document.write(Math.floor(difference / ${oneHour}) + 'h')}else{document.write(Math.floor(difference / ${oneMinute}) + 'm')}</script>`;
                     dateclass = "age-h";
                 }
 
@@ -121,7 +121,7 @@ export function template ({ allItems, groups, errors, now }) {
                                 datestring = Math.floor(difference / oneHour) + 'h';
                                 dateclass = "age-h";
                             } else {
-                                datestring = Math.floor(difference / oneMinute) + 'm';
+                                datestring = `<script>difference=Date.now()-${(new Date (feed.items[0].isoDate)).getTime()};if (difference >= ${oneHour}){document.write(Math.floor(difference / ${oneHour}) + 'h')}else{document.write(Math.floor(difference / ${oneMinute}) + 'm')}</script>`;
                                 dateclass = "age-h";
                             }
 
