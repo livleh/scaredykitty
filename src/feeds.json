@@ -145,12 +145,12 @@
     "https://api.quantamagazine.org/feed/",
     "https://kill-the-newsletter.com/feeds/7ietn0cndxnqxods.xml",
     "https://sebastianraschka.com/rss_feed.xml",
-    "https://artificialintelligencemadesimple.substack.com/feed",
-    "https://newsletter.ruder.io/feed",
-    "https://www.latent.space/feed",
-    "https://thegradientpub.substack.com/feed",
-    "https://aiguide.substack.com/feed",
-    "https://cameronrwolfe.substack.com/feed"
+    "https://artificialintelligencemadesimple.substack.com/feed.xml",
+    "https://newsletter.ruder.io/feed.xml",
+    "https://www.latent.space/feed.xml",
+    "https://thegradientpub.substack.com/feed.xml",
+    "https://aiguide.substack.com/feed.xml",
+    "https://cameronrwolfe.substack.com/feed.xml"
   ],
   "👩‍💻": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew",
