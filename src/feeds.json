@@ -143,7 +143,14 @@
   "🎓": [
     "https://ethz.ch/en/news-und-veranstaltungen/eth-news/news/_jcr_content.feed",
     "https://api.quantamagazine.org/feed/",
-    "https://kill-the-newsletter.com/feeds/7ietn0cndxnqxods.xml"
+    "https://kill-the-newsletter.com/feeds/7ietn0cndxnqxods.xml",
+    "https://sebastianraschka.com/rss_feed.xml",
+    "https://artificialintelligencemadesimple.substack.com/feed",
+    "https://newsletter.ruder.io/feed",
+    "https://www.latent.space/feed",
+    "https://thegradientpub.substack.com/feed",
+    "https://aiguide.substack.com/feed",
+    "https://cameronrwolfe.substack.com/feed"
   ],
   "👩‍💻": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew",
