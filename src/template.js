@@ -44,7 +44,7 @@ export function template ({ allItems, groups, errors, now }) {
                 ${groups.map((group) => {
 
                   try{let difference = nowmil - (new Date (group[1][0].items[0].isoDate)).getTime();} // difference in milliseconds
-                  catch{let difference = 1000*60*60*24*365*1000;}
+                  catch{let difference = 1000*60*60*24*365*1000; }
                   let dateclass = "";
 
                   if (difference >= oneMonth) {
