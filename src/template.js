@@ -43,8 +43,8 @@ export function template ({ allItems, groups, errors, now }) {
               <ul style="margin-left:0px">
                 ${groups.map((group) => {
 
-                  let difference = nowmil - (new Date (group[1][0].items[0].isoDate)).getTime(); // difference in milliseconds
-
+                  try{let difference = nowmil - (new Date (group[1][0].items[0].isoDate)).getTime();} // difference in milliseconds
+                  catch{let difference = 1000*60*60*24*365*1000;}
                   let dateclass = "";
 
                   if (difference >= oneMonth) {
