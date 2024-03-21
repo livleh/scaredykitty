@@ -3,7 +3,8 @@
     "https://www.srf.ch/news/bnf/rss/1890",
     "https://rss.metafilter.com/metafilter.rss",
     "https://rss.metafilter.com/ask.rss",
-    "http://feeds.feedburner.com/NewsNovo-monde"
+    "http://feeds.feedburner.com/NewsNovo-monde",
+    "https://nitter.poast.org/neuranne/rss"
   ],
   "▶️": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCB_WkcAGmlt5lOW1uHCvemQ",
@@ -138,7 +139,8 @@
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCAc145AxrdULcdOUfD8T-kg",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UC4dBHeQ4xfz5zBwaIcmEJfg",
     "https://www.reddit.com/r/egg_irl/search.rss?q=author%3ABrooke-Valley&restrict_sr=on&include_over_18=on&sort=new&t=all",
-    "https://kill-the-newsletter.com/feeds/9dlca2i0xnm3znpv.xml"
+    "https://kill-the-newsletter.com/feeds/9dlca2i0xnm3znpv.xml",
+    "https://nitter.poast.org/potatopolitics/rss"
   ],
   "🎓": [
     "https://ethz.ch/en/news-und-veranstaltungen/eth-news/news/_jcr_content.feed",
@@ -174,7 +176,10 @@
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCTjPBE9BNsmv44wgxWEy2zw",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCV0qA-eDDICsRR9rPcnG7tw",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA",
-    "https://kill-the-newsletter.com/feeds/maf3ks5bm4twjn53.xml"
+    "https://kill-the-newsletter.com/feeds/maf3ks5bm4twjn53.xml",
+    "https://nitter.poast.org/karpathy/rss",
+    "https://nitter.poast.org/ylecun/rss",
+    "https://nitter.poast.org/_akhaliq/rss"
   ],
   "🧘‍♀️": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UClHVl2N3jPEbkNJVx-ItQIQ",
