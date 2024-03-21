@@ -152,7 +152,10 @@
     "https://thegradientpub.substack.com/feed.xml",     
     "https://aiguide.substack.com/feed.xml",     
     "https://cameronrwolfe.substack.com/feed.xml",
-    "https://kill-the-newsletter.com/feeds/7ietn0cndxnqxods.xml"
+    "https://kill-the-newsletter.com/feeds/7ietn0cndxnqxods.xml",
+    "https://nitter.poast.org/karpathy/rss",
+    "https://nitter.poast.org/ylecun/rss",
+    "https://nitter.poast.org/_akhaliq/rss"
   ],
   "👩‍💻": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew",
@@ -176,10 +179,7 @@
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCTjPBE9BNsmv44wgxWEy2zw",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCV0qA-eDDICsRR9rPcnG7tw",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA",
-    "https://kill-the-newsletter.com/feeds/maf3ks5bm4twjn53.xml",
-    "https://nitter.poast.org/karpathy/rss",
-    "https://nitter.poast.org/ylecun/rss",
-    "https://nitter.poast.org/_akhaliq/rss"
+    "https://kill-the-newsletter.com/feeds/maf3ks5bm4twjn53.xml"
   ],
   "🧘‍♀️": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UClHVl2N3jPEbkNJVx-ItQIQ",
