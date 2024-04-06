@@ -73,7 +73,7 @@ export function template ({ allItems, groups, errors, now }) {
               ${/*feeds that can be enlarged*/feeds.map((feed) => {
                 let difference = 1000 * 60 * 60 * 24 * 365 * 1000; // Default value of 1000 years in milliseconds
                   try {
-                    difference = nowmil - (new Date(group[1][0].items[0].isoDate)).getTime(); // difference in milliseconds
+                    difference = nowmil - (new Date(feed.items[0].isoDate)).getTime(); // difference in milliseconds
                   } catch (error) {
                     console.error("Error calculating difference:", error);
                   } 
