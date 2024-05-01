@@ -37,8 +37,7 @@ export function template ({ allItems, groups, errors, now }) {
     <div>
       <article>
         <section>
-        ${/*section for each group*/forEach(groups, ([groupName, feeds]) => `
-          <div class="follows" id="${groupName}">
+          <div>
             <div class="tags">
               <ul style="margin-left:0px">
                 ${groups.map((group) => {
@@ -61,14 +60,14 @@ export function template ({ allItems, groups, errors, now }) {
 
 
                   return ` 
-                <li class="${dateclass}"><a ${group[0] === groupName ? "class='active'" : ''} href="#${group[0]}">${group[0]}</a></li>
+                <li class="${dateclass}"><a href="#${group[0]}">${group[0]}</a></li>
               `}).join('')}
               <li class="last_build">Updated </li>
               </ul>
             </div>
-
-
-            
+          </div>
+        ${/*section for each group*/forEach(groups, ([groupName, feeds]) => `
+          <div class="follows" id="${groupName}">
               <ol>
               ${/*feeds that can be enlarged*/feeds.map((feed) => {
                 let difference = 1000 * 60 * 60 * 24 * 365 * 1000; // Default value of 1000 years in milliseconds
@@ -203,6 +202,7 @@ export function template ({ allItems, groups, errors, now }) {
   if (!window.location.hash) {
     window.location.hash = '${groups[0][0]}';
   }
+  setActiveTag();
 
 
 
@@ -272,6 +272,19 @@ export function template ({ allItems, groups, errors, now }) {
       window.location.reload(true);
     }
   }); 
+  function setActiveTag() {
+    const hash = decodeURIComponent(window.location.hash.slice(1));
+    const tags = document.querySelectorAll('.tags li a');
+    tags.forEach(tag => {
+      if (tag.getAttribute('href') === "#" + hash) {
+        tag.classList.add('active');
+        console.log("active");
+      } else {
+        tag.classList.remove('active');
+      }
+    });
+  }
+  window.addEventListener('hashchange', setActiveTag);
 
 </script>
 </body>
