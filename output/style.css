@@ -33,7 +33,7 @@ section{
 .tags{
   position: relative;
   margin-bottom: 12px;
-  overflow-x: hidden;
+  overflow-y: hidden;
   width: 100%;
   border-bottom: 8px solid rgb(0,85,102);
   
