@@ -83,7 +83,10 @@ async function build({ config, feeds, cache, writeCache = false }) {
           throw Error(`Feed at ${url} contains no items.`)
 
         contents.feed = url;
-        contents.title = contents.title || contents.link;
+        contents.title = (contents.title || contents.description || contents.link);
+        if (contents.title.length > 100) {
+          contents.title = contents.title.substring(0, 97) + '...';
+        }
         
         groupContents[groupName].push(contents);
 
