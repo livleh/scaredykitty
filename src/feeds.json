@@ -4,14 +4,22 @@
     "https://rss.metafilter.com/metafilter.rss",
     "https://rss.metafilter.com/ask.rss",
     "http://feeds.feedburner.com/NewsNovo-monde",
-    "https://nitter.poast.org/neuranne/rss",
     "https://feministischerstreikzuerich.ch/feed",
     "https://dynomight.net/feed.xml"
   ],
   "🦋": [
     "https://bsky.app/profile/did:plc:7knftcimdqusmixgonfjnl3s/rss",
     "https://livleh.github.io/twitter-rss/MiaMulder.xml",
-    "https://bsky.app/profile/did:plc:5nq3pybl4nnoxfp3ovjy2lh7/rss"
+    "https://bsky.app/profile/did:plc:5nq3pybl4nnoxfp3ovjy2lh7/rss",
+    "https://livleh.github.io/twitter-rss/AK.xml",
+    "https://livleh.github.io/twitter-rss/AndrejKarpathy.xml",
+    "https://livleh.github.io/twitter-rss/Anne-LaureLeCunff.xml",
+    "https://livleh.github.io/twitter-rss/HeatherCooper.xml",
+    "https://livleh.github.io/twitter-rss/LynnCole.xml",
+    "https://bsky.app/profile/did:plc:l7vyihptzaixeh3t4swl4w66/rss",
+    "https://livleh.github.io/twitter-rss/NickSt.Pierre.xml",
+    "https://livleh.github.io/twitter-rss/NominalNaomi.xml",
+    "https://livleh.github.io/twitter-rss/YannLeCun.xml"
   ],
   "▶️": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCB_WkcAGmlt5lOW1uHCvemQ",
@@ -125,8 +133,6 @@
   ],
   "🏳️‍⚧️": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCNRNF27Q3clFZ3XAPu9DkUg",
-    "https://nitter.cz/Potatopolitics/rss",
-    "https://nitter.cz/josierosec/rss",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCC_S5oOAJp0iaF4fDT3QS0g",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCxFWzKZa74SyAqpJyVlG5Ew",
     "https://www.tgns.ch/de/feed/",
@@ -150,9 +156,7 @@
     "https://www.youtube.com/feeds/videos.xml?channel_id=UC2PA-AKmVpU6NKCGtZq_rKQ",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCAc145AxrdULcdOUfD8T-kg",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UC4dBHeQ4xfz5zBwaIcmEJfg",
-    "https://www.reddit.com/r/egg_irl/search.rss?q=author%3ABrooke-Valley&restrict_sr=on&include_over_18=on&sort=new&t=all",
-    "https://nitter.poast.org/potatopolitics/rss",
-    "https://nitter.poast.org/nominalnaomi/rss"
+    "https://www.reddit.com/r/egg_irl/search.rss?q=author%3ABrooke-Valley&restrict_sr=on&include_over_18=on&sort=new&t=all"
   ],
   "🎓": [
     "https://ethz.ch/en/news-und-veranstaltungen/eth-news/news/_jcr_content.feed",
@@ -164,10 +168,7 @@
     "https://thegradientpub.substack.com/feed.xml",     
     "https://aiguide.substack.com/feed.xml",     
     "https://cameronrwolfe.substack.com/feed.xml",
-    "https://kill-the-newsletter.com/feeds/7ietn0cndxnqxods.xml",
-    "https://nitter.poast.org/karpathy/rss",
-    "https://nitter.poast.org/ylecun/rss",
-    "https://nitter.poast.org/_akhaliq/rss"
+    "https://kill-the-newsletter.com/feeds/7ietn0cndxnqxods.xml"
   ],
   "👩‍💻": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew",
@@ -176,7 +177,6 @@
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UC4-5v-f-xKnbi1yaAuRSi_w",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCobqgqE4i5Kf7wrxRxhToQA",
-    "https://nitter.cz/FreyaHolmer/rss",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCmtyQOKKmrMVaKuRXz02jbQ",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UC7M-Wz4zK8oikt6ATcoTwBA",
