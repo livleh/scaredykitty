@@ -2,6 +2,8 @@
   "timezone_offset": -4.0,
   "redirects": {
     "medium": "scribe.rip",
-    "tiktok": "vm.dstn.to"
+    "tiktok": "vm.dstn.to",
+    "x": "nitter.poast.org",
+    "twitter": "nitter.poast.org"
   }
 }
