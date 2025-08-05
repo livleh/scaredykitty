@@ -7,17 +7,6 @@
     "https://feministischerstreikzuerich.ch/feed",
     "https://dynomight.net/feed.xml"
   ],
-  "🦋": [
-    "https://bsky.app/profile/did:plc:7knftcimdqusmixgonfjnl3s/rss",
-    "https://livleh.github.io/twitter-rss/MiaMulder.xml",
-    "https://bsky.app/profile/did:plc:5nq3pybl4nnoxfp3ovjy2lh7/rss",
-    "https://livleh.github.io/twitter-rss/AK.xml",
-    "https://livleh.github.io/twitter-rss/AndrejKarpathy.xml",
-    "https://livleh.github.io/twitter-rss/Anne-LaureLeCunff.xml",
-    "https://livleh.github.io/twitter-rss/NominalNaomi.xml",
-    "https://livleh.github.io/twitter-rss/YannLeCun.xml",
-    "https://livleh.github.io/twitter-rss/Camenduru.xml"
-  ],
   "▶️": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCB_WkcAGmlt5lOW1uHCvemQ",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCRRr_xrOm66qaigIbwFLvbQ",
@@ -100,15 +89,11 @@
     "https://livleh.github.io/tiktok-rss-flat/rss/dylanmulvaney",
     "https://livleh.github.io/tiktok-rss-flat/rss/grace.hylandd",
     "https://livleh.github.io/tiktok-rss-flat/rss/hhhaydenn",
-    "https://livleh.github.io/tiktok-rss-flat/rss/itsmoonrain",
     "https://livleh.github.io/tiktok-rss-flat/rss/jayceecuebas",
-    "https://livleh.github.io/tiktok-rss-flat/rss/jessicakirson",
     "https://livleh.github.io/tiktok-rss-flat/rss/kukombo",
     "https://livleh.github.io/tiktok-rss-flat/rss/lillytino_",
     "https://livleh.github.io/tiktok-rss-flat/rss/loveletterstosf",
     "https://livleh.github.io/tiktok-rss-flat/rss/maddie.cleary",
-    "https://livleh.github.io/tiktok-rss-flat/rss/melshoshahi",
-    "https://livleh.github.io/tiktok-rss-flat/rss/mushr00mfairy222",
     "https://livleh.github.io/tiktok-rss-flat/rss/norabinki",
     "https://livleh.github.io/tiktok-rss-flat/rss/nyaravt",
     "https://livleh.github.io/tiktok-rss-flat/rss/palim_tintin",
@@ -116,19 +101,14 @@
     "https://livleh.github.io/tiktok-rss-flat/rss/ramalauw",
     "https://livleh.github.io/tiktok-rss-flat/rss/rebelllhor",
     "https://livleh.github.io/tiktok-rss-flat/rss/runetsout",
-    "https://livleh.github.io/tiktok-rss-flat/rss/shaunaddewit",
     "https://livleh.github.io/tiktok-rss-flat/rss/shaunadewit",
     "https://livleh.github.io/tiktok-rss-flat/rss/shoptunnelvision",
     "https://livleh.github.io/tiktok-rss-flat/rss/sssmalltea",
-    "https://livleh.github.io/tiktok-rss-flat/rss/starryribbons",
     "https://livleh.github.io/tiktok-rss-flat/rss/tallywyteee",
     "https://livleh.github.io/tiktok-rss-flat/rss/tandarok",
     "https://livleh.github.io/tiktok-rss-flat/rss/techroastshow",
-    "https://livleh.github.io/tiktok-rss-flat/rss/jade..harmony",
-    "https://livleh.github.io/tiktok-rss-flat/rss/themermaidscale",
     "https://livleh.github.io/tiktok-rss-flat/rss/ts_jewess",
-    "https://livleh.github.io/tiktok-rss-flat/rss/whimsysoul",
-    "https://livleh.github.io/tiktok-rss-flat/rss/zoebreadtok"
+    "https://livleh.github.io/tiktok-rss-flat/rss/whimsysoul"
   ],
   "🏳️‍⚧️": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCNRNF27Q3clFZ3XAPu9DkUg",
@@ -170,7 +150,8 @@
     "https://thegradientpub.substack.com/feed.xml",     
     "https://aiguide.substack.com/feed.xml",     
     "https://cameronrwolfe.substack.com/feed.xml",
-    "https://kill-the-newsletter.com/feeds/7ietn0cndxnqxods.xml"
+    "https://kill-the-newsletter.com/feeds/7ietn0cndxnqxods.xml",
+    "https://nmn.gl/blog/feed"
   ],
   "👩‍💻": [
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew",
