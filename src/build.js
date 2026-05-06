@@ -88,6 +88,15 @@ async function build({ config, feeds, cache, writeCache = false }) {
                 (contents.channel && contents.channel.title) ||
                 (contents.channel && contents.channel.description) ||
                 contents.link;
+
+        // Fix for YouTube "no shorts" playlist feeds where the title is just "Videos"
+        if (contents.title === 'Videos' && url.includes('youtube.com/feeds/videos.xml?playlist_id=')) {
+          // Grab the channel name from the author of the first video
+          if (contents.items && contents.items.length > 0) {
+            contents.title = contents.items[0].author || contents.items[0].creator || contents.title;
+          }
+        }
+
         if (contents.title.length > 100) {
           contents.title = contents.title.substring(0, 97) + '...';
         }
